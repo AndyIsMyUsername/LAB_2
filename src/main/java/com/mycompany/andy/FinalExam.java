@@ -4,16 +4,20 @@
  */
 package com.mycompany.andy;
 
-/**
- *
- * @author 6223602
- */
+
 public class FinalExam extends GradedActivity {
     private int numQuestions;
     private double pointsEach;
     private int numMissed;
     
+    public FinalExam (int questions , int missed) {
+        
+        int pointsEach = 100/ questions;
+        int numbericScore = 100 - (missed * pointsEach);
+        
     
+        
+    }
 
     public double getPointsEach() {
         return pointsEach;

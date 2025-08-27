@@ -10,7 +10,6 @@ package com.mycompany.andy;
  */
 public class GradedActivity {
 
-   
     private double score;
 
     public double getScore() {
@@ -24,14 +23,14 @@ public class GradedActivity {
     public char getGrade() {
         if (score >= 90 ) {
             return 'A';
-        } else if (score >= 80 && score <= 90) {
+        } else if (score >= 80) {
             return 'B';
-        } else if ( score >= 70 && score <= 80) {
+        } else if ( score >= 70) {
             return 'C';
-        } else if( score >= 60 && score <= 70) {
+        } else if( score >= 60) {
             return 'D';
         } else {
-            return 'E';
+            return 'F';
         }
     }
     
