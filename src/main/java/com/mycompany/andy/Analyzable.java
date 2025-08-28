@@ -4,11 +4,10 @@
  */
 package com.mycompany.andy;
 
-/**
- *
- * @author 6223602
- */
-public interface Analyzable implemtent CourseGrades {
-    
+
+public interface Analyzable {
+    double getAverage();
+    GradedActivity getHighestActivity();
+    GradedActivity getLowet();
     
 }
