@@ -4,6 +4,8 @@
  */
 package com.mycompany.andy;
 
+import java.util.Set;
+
 
 public class FinalExam extends GradedActivity {
     private int numQuestions;
@@ -11,12 +13,12 @@ public class FinalExam extends GradedActivity {
     private int numMissed;
     
     public FinalExam (int questions , int missed) {
+        numQuestions = questions;
+        numMissed = missed;
         
-        int pointsEach = 100/ questions;
-        int numbericScore = 100 - (missed * pointsEach);
-        
-    
-        
+        pointsEach = 100/ questions;
+        double numbericScore = 100 - (missed * pointsEach);
+        setScore(score);
     }
 
     public double getPointsEach() {

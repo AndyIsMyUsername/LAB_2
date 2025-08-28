@@ -11,6 +11,13 @@ package com.mycompany.andy;
 public class PassFailActivity extends GradedActivity {
     private double minPassingScore;
     
-    publicgetGrade()
-            
+    public PassFailActivity(double minPassingScore) {
+        this.minPassingScore = minPassingScore;
+    }
+
+    @Override
+    public char getGrade() {
+        if (getScore() >= minPassingScore) return 'P';
+        else return 'F';
+    }       
 }

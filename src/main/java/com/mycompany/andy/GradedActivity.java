@@ -10,7 +10,7 @@ package com.mycompany.andy;
  */
 public class GradedActivity {
 
-    private double score;
+   public double score;
 
     public double getScore() {
         return score;
@@ -33,7 +33,6 @@ public class GradedActivity {
             return 'F';
         }
     }
-    
     
      public static void main(String[] args) {
         

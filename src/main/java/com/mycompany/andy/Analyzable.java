@@ -10,4 +10,5 @@ package com.mycompany.andy;
  */
 public interface Analyzable implemtent CourseGrades {
     
+    
 }
