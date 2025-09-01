@@ -14,7 +14,7 @@ public class PassFailExam extends PassFailActivity {
         super(minPassingScore);
         numQuestions = questions;
         numMissed = missed;
-        pointsEach = 100/ questions;
+        pointsEach = 100.0 / questions;
         double score = 100 - (missed * pointsEach);
         setScore(score);
     }

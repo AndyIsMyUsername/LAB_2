@@ -28,9 +28,43 @@ public class CourseGrades implements Analyzable{
     }
 
     @Override
+    public double getAverage() {
+        double sum = 0;
+        
+        for (GradedActivity g : grades) {
+            sum += g.getScore();
+        }
+        return sum / grades.length;
+    }
+
+    @Override
+    public GradedActivity getHighest() {
+        GradedActivity high = grades[0];
+        for (GradedActivity g : grades) {
+            if (g.getScore() > high.getScore()) {
+                high = g;
+            }
+        }
+        return high;
+    }
+
+    @Override
+    public GradedActivity getLowest() {
+        GradedActivity lowest = grades[0];
+        for (GradedActivity g : grades) {
+            if (g.getScore() < lowest.getScore()) {
+                lowest = g;
+            }
+        }
+        return lowest;
+    }
+    
+    
+
+    @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        String[] names = {"Lab", "PassFailExam", "Essay", " FinalExam" }; 
+        String[] names = {"Lab", "PassFailExam", "Essay", "FinalExam" }; 
         
         for (int i = 0; i < grades.length; i++) {
         sb.append(names[i])

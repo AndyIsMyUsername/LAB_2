@@ -33,9 +33,4 @@ public class GradedActivity {
             return 'F';
         }
     }
-    
-     public static void main(String[] args) {
-        
-    }
-    
 }

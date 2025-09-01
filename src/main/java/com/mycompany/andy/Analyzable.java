@@ -7,7 +7,6 @@ package com.mycompany.andy;
 
 public interface Analyzable {
     double getAverage();
-    GradedActivity getHighestActivity();
-    GradedActivity getLowet();
-    
+    GradedActivity getHighest();
+    GradedActivity getLowest();
 }
